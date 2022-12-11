@@ -18,51 +18,8 @@
 body{
   width: 700px;
   max-width: 100%;
-  
   margin: 50px auto;
 }
-
-.tag{
-  display: inline-block;
-  font-family: 'Flanders Art Serif';
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 16px;
-  background: $black padding-box;
-  padding: 0.3em;
-  color: $white;
-}
-
-.foreword{
-  font-family: 'Flanders Art Serif';
-  font-size: 26px;
-  line-height: 40px;
-  margin-bottom: 90px;
-}
-
-.context{
-  font-family: 'Georgia';
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 60px;
-}
-
-
-h1{
-  font-family: 'Flanders Art Serif';
-  font-size: 58px;
-  line-height: 69px;
-  letter-spacing: 0;
-  margin-bottom: 130px;
-}
-
-h2{
-  font-family: 'Flanders Art Serif';
-  font-weight: 500;
-  font-size: 30px;
-  margin-bottom: 40px;
-}
-
 
 .question{
   display: flex;
@@ -74,6 +31,8 @@ h2{
     aspect-ratio : 1 / 1;
     position: relative;
     margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
     .dilemma{
       position: absolute;
       width: 100%;
@@ -84,13 +43,8 @@ h2{
       justify-content: center;
       align-items: center;
       padding: 0.5em;
-      font-family: 'ARS Maquette Pro';
-      font-size: 18px;
-      text-align: center;
     }
     .price{
-      font-family: 'ARS Maquette Pro';
-      font-weight: bold;
       position: absolute;
       right: 10px;
       top: 10px;
@@ -118,18 +72,7 @@ button{
   &.secondary{
     background: transparent;
   }
-  
 }
-
-.total-questions{
-  font-family: 'ARS Maquette Pro';
-  font-size: 16px;
-  color: $grey;
-  text-align: right;
-  
-}
-
-
 
 .answers{
   .choice{
@@ -168,7 +111,6 @@ button{
   align-items: center;
   justify-content: center;
   z-index: 999;
-  
   .container{
     width: 700px;
     max-width: 90%;
@@ -179,12 +121,7 @@ button{
     background: white;
     padding: 2em 50px;
     border: solid 2px black;
-    p{
-      font-family: 'ARS Maquette Pro';
-      font-size: 18px;
-      font-weight: normal;
-      line-height: 28px;
-    }
+    
     button{
       margin-top: 50px;
     }
@@ -193,17 +130,6 @@ button{
 }
 
 .result{
-  
-  p{
-    font-family: 'ARS Maquette Pro';
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 28px;
-    
-    &.selected{
-      font-weight: bold;
-    }
-  }
   .total{
     &-container{
       display: flex;
@@ -228,12 +154,6 @@ button{
 
 span{
   font-weight: bold;
-}
-
-#quote{
-  font-family: 'Georgia';
-  font-style: italic;
-  font-size: 20px;
 }
 
 hr{
@@ -278,7 +198,4 @@ a{
   .answers{
     margin: 0;
   }
-  // .content{
-  //   margin: 0;
-  // }
 }

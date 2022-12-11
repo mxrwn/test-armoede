@@ -28,7 +28,7 @@ export default function Question({question, saveChoice, activeQuestion, nextQues
         <div key={index} tabIndex={index} className={activeQuestion && activeQuestion.content === choice.content ? 'choice active' : 'choice'}
             onClick={() => saveChoice({...choice, question: question.number, chosen: true})}
             onFocus={() => saveChoice({...choice, question: question.number, chosen: true})} 
-            >
+            style={{backgroundImage: `url(./images/${question.number}_${index + 1}.png)`}}>
           <p className='dilemma'>{choice.content}</p>
           <p className='price'>€{choice.price}</p>
         </div>
