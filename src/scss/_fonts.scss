@@ -1,0 +1,31 @@
+$fonts-path: "./../assets/fonts/";
+
+@font-face {
+  font-family: 'Flanders Art Serif';
+  src: url("#{$fonts-path}/FlandersArtSerif-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Flanders Art Serif';
+  src: url("#{$fonts-path}/FlandersArtSerif-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Flanders Art Serif';
+  src: url("#{$fonts-path}/FlandersArtSerif-Bold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'ARS Maquette Pro';
+  src: url("#{$fonts-path}/ARSMaquettePro-Regular.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'ARS Maquette Pro';
+  src: url("#{$fonts-path}/ARSMaquettePro-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
